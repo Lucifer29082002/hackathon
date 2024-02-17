@@ -27,8 +27,12 @@ header {
     flex-direction: column;
 
     background-color: black;
-
+    gap: 2.5rem;
     z-index: 1;
+}
+
+header > *{
+    margin: 0;
 }
 
 
