@@ -45,7 +45,7 @@ setTimeout(() => {
 
     video.pause();
     factText.textContent = `"${getRandomFact()}"`;
-}, 2000);
+}, 2500);
 
 
 
