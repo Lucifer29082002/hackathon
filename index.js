@@ -34,7 +34,8 @@ const animatedElements = document.querySelectorAll(".animated");
 
 btn.addEventListener("click", () => {
     
-    header.classList.add("loaded");
+    //header.classList.add("loaded");
+    window.location.href = "https://juris-ai.streamlit.app/";
 })
 
 const video  = document.querySelector("#logo");
