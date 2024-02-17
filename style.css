@@ -1,5 +1,9 @@
 :root {
     color-scheme: dark;
+
+    --btn-primary: rgb(70, 158, 193);
+    --btn-secondary: rgb(52, 104, 146);
+    --btn-border: rgb(91, 193, 233);
 }
 
 body,
@@ -56,18 +60,21 @@ body {
 }
 
 .btn {
-    background-color: rgb(82, 143, 223);
+    background-color: var(--btn-primary);
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: 1rem;
-    border: 5px solid rgb(151, 182, 223);
-    box-shadow: -10px 10px 0px rgb(57, 106, 169);
+    border: 5px solid var(--btn-border);
+    box-shadow: -10px 10px 0px var(--btn-secondary);
     transition-duration: 200ms;
 }
 
 .btn:hover {
+    transform: scale(1.1);
+    
     transition-duration: 200ms;
     box-shadow: none;
+    box-shadow: 0 0 30px var(--btn-secondary);
 }
 
 #chatbot {
