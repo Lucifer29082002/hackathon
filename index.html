@@ -14,12 +14,17 @@
 
 <body>
     <header class="hero">
-        <img src="newLogo.jpg" alt="juris">
-        <p class="text">Do You know?</p>
-        <div class="fact-container">
-            <h2 class="fact text"></h2>
+        <!-- <img id="logo" src="newLogo.jpg" alt="juris"> -->
+        <video id="logo" muted autoplay>
+            <source src="logoVideo.mp4">
+        </video> 
+        <div class="others animated">
+            <p class="text animated">Do You know?</p>
+            <div class="fact-container">
+                <h2 class="fact text  animated"></h2>
+            </div>
+            <button class="btn animated">Chat Now</button>
         </div>
-        <button class="btn">Chat Now</button>
     </header>
 
     <iframe id="chatbot" src="http://52.66.209.49:8501" frameborder="0"></iframe>
