@@ -18,12 +18,12 @@ function getRandomFact() {
 }
 
 //selecting elements
-const header = document.querySelector("header");
+const header = document.querySelector(".hero");
 const factText  = document.querySelector(".fact");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", () => {
-    //window.location.href = "http://localhost:8501/";
+    
     header.classList.add("loaded");
 })
 factText.textContent = `"${getRandomFact()}"`;
