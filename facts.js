@@ -17,5 +17,16 @@ function getRandomFact() {
     return randomFacts[randomIndex];
 }
 
-// Print a random fact
-console.log(getRandomFact());
+//selecting elements
+const header = document.querySelector("header");
+const factText  = document.querySelector(".fact");
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {
+    //window.location.href = "http://localhost:8501/";
+    header.classList.add("loaded");
+})
+factText.textContent = `"${getRandomFact()}"`;
+
+
+
