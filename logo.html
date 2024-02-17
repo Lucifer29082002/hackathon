@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="logo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      ::-webkit-scrollbar{
+        display: none;
+      }
+
+        body{
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            overflow: hidden;
+        }
+        .logo-container{
+            overflow: hidden;
+            height: 100vh;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .video{
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+         }
+
+         .loaded{
+            display: none;
+         }
+         .header{
+            background-color: #1299e7;
+            padding: 20px;
+            text-align: center;
+            
+         }
+         
+
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+    <video autoplay muted loop id="myVideo"  preload="auto" class="video">
+        <source src="C:\Users\91889\Downloads\Green_Modern_Digital_Service_Logo (1).mp4" type="video/mp4">
+      </video>
+    </div>
+
+    
+
+
+
+    <script>
+        const modal = document.querySelector(".logo-container");
+
+setTimeout(() => {
+    modal.classList.add("loaded");
+}, 3000);
+    </script>
+    
+    
+</body>
+</html>
