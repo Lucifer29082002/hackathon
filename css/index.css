@@ -1,9 +1,14 @@
 :root {
     color-scheme: dark;
 
-    --btn-primary: rgb(70, 158, 193);
-    --btn-secondary: rgb(52, 104, 146);
-    --btn-border: rgb(91, 193, 233);
+
+    --background : #0e1117;
+    --primary : #ffc458;
+
+
+    --accent: #ff4b4b;
+    --accent-dark: #cf3636;
+    --accent-light: #fd8181;
 }
 
 body,
@@ -34,7 +39,7 @@ body {
 
     gap: 2.5rem;
 
-    background-color: black;
+    background-color: var(--background);
 }
 
 a {
@@ -48,6 +53,19 @@ a {
 nav:hover {
     scale: 1.5;
     transition-duration: 200ms;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+
+    top:0;
+
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+
+    z-index: 1;
 }
 
 .hero>#logo {
@@ -84,16 +102,16 @@ nav:hover {
 }
 
 .text {
-    color: gray;
+    color: rgb(217, 217, 217);
 }
 
 .btn {
-    background-color: var(--btn-primary);
+    background-color: var(--accent);
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: 2rem;
-    border: 3px solid var(--btn-border);
-    box-shadow: -10px 10px 0px var(--btn-secondary);
+    border: 5px solid var(--accent-light);
+    box-shadow: -10px 10px 0px var(--accent-dark);
     transition-duration: 200ms;
 }
 
@@ -102,7 +120,7 @@ nav:hover {
 
     transition-duration: 200ms;
     box-shadow: none;
-    box-shadow: 0 0 30px var(--btn-secondary);
+    box-shadow: 0 0 30px var(--accent);
 }
 
 #chatbot {
