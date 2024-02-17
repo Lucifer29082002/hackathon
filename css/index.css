@@ -45,7 +45,12 @@ a {
     z-index: 1;
 }
 
-.hero > #logo {
+nav:hover {
+    scale: 1.5;
+    transition-duration: 200ms;
+}
+
+.hero>#logo {
     width: 30%;
     max-width: 200px;
 
@@ -94,7 +99,7 @@ a {
 
 .btn:hover {
     transform: scale(1.1);
-    
+
     transition-duration: 200ms;
     box-shadow: none;
     box-shadow: 0 0 30px var(--btn-secondary);
@@ -120,4 +125,3 @@ a {
     transition-duration: 400ms;
     transition-timing-function: ease-in-out;
 }
-

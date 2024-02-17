@@ -8,8 +8,27 @@ body {
 }
 
 nav {
-    width: 100%;
+
     text-align: center;
+
+
+
+
+}
+
+ul {
+
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    width: 80px;
+    padding: 0%;
+
+}
+
+ul:hover {
+    transform: scale(1.5);
+    transition-duration: 200ms;
 }
 
 nav a {
@@ -29,15 +48,15 @@ nav a {
     font-weight: 600;
     text-align: center;
     font-size: 3rem;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
-.welcome-text > .subtext {
+.welcome-text>.subtext {
     color: gray;
     font-weight: 400;
 }
 
-.welcome-text > .special {
+.welcome-text>.special {
     background: linear-gradient(45deg, #ffcc00, #ff6699);
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,15 +69,6 @@ nav a {
     color: rgb(255, 255, 255);
 }
 
-section > p {
+section>p {
     color: gray;
 }
-
-
-
-
-
-
-
-
-
