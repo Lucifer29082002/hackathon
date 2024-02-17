@@ -36,9 +36,10 @@ body {
     background-color: black;
 }
 
-.hero > img {
+.hero > #logo {
     width: 30%;
-    max-width: 300px;
+    max-width: 200px;
+
 }
 
 .loaded {
@@ -55,6 +56,19 @@ body {
     font-size: 1.4rem;
 }
 
+.others {
+    /* background-color: rebeccapurple; */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    padding-bottom: 2rem;
+}
+
 .text {
     color: gray;
 }
@@ -63,8 +77,8 @@ body {
     background-color: var(--btn-primary);
     padding: 1rem;
     font-size: 1.5rem;
-    border-radius: 1rem;
-    border: 5px solid var(--btn-border);
+    border-radius: 2rem;
+    border: 3px solid var(--btn-border);
     box-shadow: -10px 10px 0px var(--btn-secondary);
     transition-duration: 200ms;
 }
@@ -80,5 +94,21 @@ body {
 #chatbot {
     width: 100%;
     height: 99.5vh;
+}
+
+.animated {
+    max-height: 0;
+    scale: 0;
+    opacity: 0;
+    transform: translateY(2rem);
+}
+
+.appear {
+    max-height: 100%;
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
 }
 
