@@ -123,11 +123,11 @@ nav:hover {
     box-shadow: 0 0 30px var(--accent);
 }
 
-#chatbot {
+/* #chatbot {
     width: 100%;
     height: 99.5vh;
 }
-
+ */
 .animated {
     max-height: 0;
     scale: 0;
